@@ -9,101 +9,94 @@
 }
 */
 
+@font-face {
+    font-family: gametext;
+    src: url(dogica/TTF/dogicapixel.ttf);
+}
 
-/* Feel free to change any of the styling below!*/
-html,
+@font-face {
+    font-family: boldgametext;
+    src: url(dogica/TTF/dogicapixelbold.ttf);
+}
+
+
+
 body {
-    margin: 0;
-    padding: 0;
+    background-color: black;
+    margin: 0px;
+    font-family: gametext;
 }
 
-/* Style the body with a background color or image if desired */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 20px;
+.homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage img {
+    height: 100vh;
 }
 
-/* Style the title of your story */
-.title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.homepage button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: -7px;
+    font-family: boldgametext;
+    font-size: 10px;
+    color: white;
+    background-color: black;
 }
 
-/* Style the story opening container */
-.story-opening {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.dungeonlvl1 {
+    display: none;
+    justify-content: center;
+    overflow: hidden;
 }
 
-/* Style the story image */
-.story-opening img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.dungeonlvl1 .wall {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-/* Style the story opening message */
-.story-opening h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
+.dungeonlvl1 .doors {
+    position: absolute;
+    width: 700px;
+    margin-top: 95px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }
 
-/* Style the buttons container */
-.buttons {
-    margin: 20px;
+.doors .door {
+    width: 150px;
+    margin-left: 30px;
 }
 
-/* Style the option buttons */
-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+
+
+.MC {
+    position: relative;
+    display: none;
+    justify-content: center;
 }
 
-button:hover {
-    background-color: #0056b3;
+.MC img {
+    margin-top: 50px;
+    width: 150px;
 }
 
-/* Style the screens for option one and option two */
-.option-one-screen,
-.option-two-screen,
-.option-one-end,
-.option-two-end {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
+.choice1-fight {
+    display: block;
 }
 
-/* Style the images in the screens */
-.option-one-screen img,
-.option-two-screen img,
-.option-one-end img,
-.option-two-end img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.choice2-screen {
+    display: block;
 }
 
-/* Style the text in the screens */
-.option-one-screen h1,
-.option-two-screen h1,
-.option-one-end h1,
-.option-two-end h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
+.theend {
+    display: block;
 }
