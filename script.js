@@ -7,6 +7,7 @@ let door1 = document.querySelector("#door1")
 let door2 = document.querySelector("#door2")
 let door3 = document.querySelector("#door3")
 let MC = document.querySelector(".MC")
+let door = document.querySelector(".door")
 
 // When you're ready to make event handlers, uncomment the code below. 
 //  - Then fill in the blanks with the correct variables.
@@ -23,11 +24,13 @@ door1.addEventListener('click', function(){
     dungeonlvl2_1.style.display="flex";
 });
 
+door.addEventListener('mouseover', function(){
+    door.style.border="solid 5px red";
+});
 
-// door2.addEventListener('click', function(){
-//
-// });
-
+door.addEventListener('mouseout', function(){
+    door.style.border="0px";
+});
 // door3.addEventListener('click', function(){
 //
 // });
