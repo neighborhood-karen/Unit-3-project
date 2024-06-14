@@ -19,22 +19,30 @@
     src: url(dogica/TTF/dogicapixelbold.ttf);
 }
 
-
+html {
+    background-image: url("images/background.gif");
+}
 
 body {
-    background-color: black;
     margin: 0px;
     font-family: gametext;
 }
+
+
 
 .homepage {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+
 .homepage img {
     height: 100vh;
 }
+
+
 
 .homepage button {
     position: absolute;
@@ -46,13 +54,18 @@ body {
     font-size: 10px;
     color: white;
     background-color: black;
+    cursor: pointer;
 }
+
+
 
 .dungeonlvl1 {
     display: none;
     justify-content: center;
     overflow: hidden;
 }
+
+
 
 .dungeonlvl1 .wall {
     width: 700px;
@@ -61,6 +74,8 @@ body {
     justify-content: center;
     overflow: hidden;
 }
+
+
 
 .dungeonlvl1 .doors {
     position: absolute;
@@ -71,10 +86,15 @@ body {
     gap: 10px;
 }
 
+
+
 .doors .door {
     width: 150px;
     margin-left: 30px;
+    cursor: pointer;
 }
+
+
 
 .doornames {
     position: absolute;
@@ -86,25 +106,230 @@ body {
     color: white;
 }
 
-.MC {
-    position: relative;
+
+
+.lvl1_MC {
+    position: absolute;
     display: none;
-    justify-content: center;
+    top: 310px;
+    left: 270px;
 }
 
-.MC img {
-    margin-top: 50px;
+
+
+.lvl1_MC img {
     width: 150px;
 }
 
-.choice1-fight {
-    display: block;
+
+
+.dungeonlvl2_1 {
+    display: none;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.choice2-screen {
-    display: block;
+
+
+.dungeonlvl2_1 .wall {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.theend {
-    display: block;
+
+
+.dungeonlvl2_1 .monster1 {
+    position: absolute;
+    top: 60px;
+    left: 545px;
+}
+
+
+.dungeonlvl2_1 .img {
+    width: 500px;
+}
+
+
+
+.attackbtn img{
+    position: absolute;
+    width: 65px;
+    top: 355px;
+    left: 599px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+
+.uparrow img {
+    position: absolute;
+    width: 50px;
+    top: 300px;
+    left: 609px;
+}
+
+
+
+.lvl2_MC {
+    position: absolute;
+    display: none;
+    top: 427px;
+    left: 572px;
+}
+
+
+
+.lvl2_MC img {
+    width: 130px;
+}
+
+.deathscreen {
+    position: relative;
+    display: none;
+    overflow: hidden;
+    top: -30px;
+    left: 280px;
+    width: 700px;
+    height: 450px;
+}
+
+
+
+.deathscreen img {
+    width: 700px;
+}
+
+
+
+.tryagain {
+    position: absolute;
+    top: 350px;
+    left: 280px;
+    border: 3px solid white;
+}
+
+.tryagain button {
+    font-family: boldgametext;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*END OF LEVEL 1---------------------------------------------------------------------------------------------------------------*/
+
+.dungeonlvl2_2 {
+    display: none;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.dungeonlvl2_2 .wall {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.dungeonlvl2_2 .monster2 img {
+    position: absolute;
+    width: 150px;
+    top: 120px;
+    left: 560px;
+}
+
+.attackbtn2 img{
+    position: absolute;
+    width: 65px;
+    top: 355px;
+    left: 599px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#mc2 {
+    position: absolute;
+    display: none;
+    top: 427px;
+    left: 572px;
+}
+
+#mc2 img {
+    width: 130px;
+}
+
+.reward {
+    display: none;
+}
+
+.reward .wall img{
+    position: relative;
+    width: 600px;
+    left: 28.65%;
+}
+
+.reward .wall {
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+
+#reward {
+    position: relative;
+    width: 95px;
+    top: 160px;
+    right: 415px;
+    cursor: pointer;
+}
+
+.reward_mc {
+    display: flex;
+    position: absolute;
+    display: none;
+    top: 120px;
+    left: 480px;
+}
+
+.reward_mc img{
+    width: 125px;
+    margin-right: 20px;
+}
+
+
+.winner {
+    position: relative;
+    display: none;
+    overflow: hidden;
+    top: 30px;
+    left: 390px;
+    width: 500px;
+    height: 500px;
+}
+
+
+
+.winner img {
+    width: 500px;
+    height: 300px;
+}
+
+
+.goagain {
+    position: absolute;
+    top: 360px;
+    left: 185px;
+    border: 3px solid white;
+}
+
+.goagain button {
+    font-family: boldgametext;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
 }

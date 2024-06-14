@@ -7,15 +7,13 @@
     <script defer src="script.js"></script>
     
     <body>
-
         <div class="homepage">
             <button id="startbtn">Start Game</button>
             <img src="images/homepagebackground.png">
         </div>
 
-        <div class="dungeonlvl1">
-            <!--ADD THE NAMES OF THE DOORS-->
 
+        <div class="dungeonlvl1">
             <div class="doors">
 
                 <div class="doornames">
@@ -27,27 +25,81 @@
                 <img src="images/door1.png" class="door" id="door1">
                 <img src="images/door1.png" class="door" id="door2">
                 <img src="images/door1.png" class="door" id="door3">
-                
+                <div class="lvl1_MC">
+                    <img src="images/MC.gif">
+                </div>
             </div>
-            <!--THE ALIGNMENT LOOKS FUCKED, FIX IT-->
+
             <img src="images/wall.jpg" class="wall">
 
         </div>
         
-        <div class="MC">
-            <img src="images/MC.gif">
+
+
+        <div class="dungeonlvl2_1">
+            <div class="monster1">
+                <img src="images/monster1.gif">
+            </div>
+
+            <div class="lvl2_MC">
+                <img src="images/MC.gif">
+            </div>
+            <div class="attackbtn">
+                <img src="images/attackbtn.png" alt="attack button" id="attackbtn">
+            </div>
+            <div class="uparrow">
+                <img src="images/uparrow.gif" alt="up arrow">
+            </div>
+            <img src="images/wall.jpg" class="wall">
         </div>
 
-        <div class="dungeonlvl2-1">
 
+
+        <div class="dungeonlvl2_2">
+            <div class="monster2">
+                <img src="images/monster2.png">
+            </div>
+
+            <div id="mc2">
+                <img src="images/MC.gif">
+            </div>
+
+            <div class="attackbtn2">
+                <img src="images/attackbtn.png" alt="attack button" id="attackbtn2">
+            </div>
+
+            <div class="uparrow">
+                <img src="images/uparrow.gif" alt="up arrow">
+            </div>
+
+            <img src="images/wall.jpg" class="wall">
         </div>
 
-        <div class="choice2-screen">
-
+        <div class="reward">
+            <div class="wall">
+                <img src="images/wall.jpg">
+            </div>
+            <div>
+                <img src="images/chest.png" alt="chest" id="reward">
+            </div>
+            <div class="reward_mc">
+                <img src="images/MC.gif">
+                <img src="images/rightarrow.gif" alt="rightarrow">
+            </div>
         </div>
 
-        <div class="theend">
+        <div class="winner">
+            <img src="images/WIN.png">
+            <div class="goagain">
+                <button id="goagain">Go again?</button>
+            </div>
+        </div>
 
+        <div class="deathscreen">
+            <img src="images/you-died.jpg">
+            <div class="tryagain">
+                <button id="tryagain">Try again?</button>
+            </div>
         </div>
 
     </body>
