@@ -1,13 +1,3 @@
-/* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
-
-/* 
-.option-one-screen, 
-.option-two-screen, 
-.option-one-end, 
-.option-two-end  {
-   display:none;
-}
-*/
 
 @font-face {
     font-family: gametext;
@@ -28,21 +18,15 @@ body {
     font-family: gametext;
 }
 
-
-
 .homepage {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
 .homepage img {
     height: 100vh;
 }
-
-
 
 .homepage button {
     position: absolute;
@@ -57,15 +41,11 @@ body {
     cursor: pointer;
 }
 
-
-
 .dungeonlvl1 {
     display: none;
     justify-content: center;
     overflow: hidden;
 }
-
-
 
 .dungeonlvl1 .wall {
     width: 700px;
@@ -74,8 +54,6 @@ body {
     justify-content: center;
     overflow: hidden;
 }
-
-
 
 .dungeonlvl1 .doors {
     position: absolute;
@@ -86,15 +64,11 @@ body {
     gap: 10px;
 }
 
-
-
 .doors .door {
     width: 150px;
     margin-left: 30px;
     cursor: pointer;
 }
-
-
 
 .doornames {
     position: absolute;
@@ -106,8 +80,6 @@ body {
     color: white;
 }
 
-
-
 .lvl1_MC {
     position: absolute;
     display: none;
@@ -115,21 +87,15 @@ body {
     left: 270px;
 }
 
-
-
 .lvl1_MC img {
     width: 150px;
 }
-
-
 
 .dungeonlvl2_1 {
     display: none;
     justify-content: center;
     overflow: hidden;
 }
-
-
 
 .dungeonlvl2_1 .wall {
     width: 600px;
@@ -139,20 +105,15 @@ body {
     overflow: hidden;
 }
 
-
-
 .dungeonlvl2_1 .monster1 {
     position: absolute;
     top: 60px;
     left: 545px;
 }
 
-
 .dungeonlvl2_1 .img {
     width: 500px;
 }
-
-
 
 .attackbtn img{
     position: absolute;
@@ -163,8 +124,6 @@ body {
     cursor: pointer;
 }
 
-
-
 .uparrow img {
     position: absolute;
     width: 50px;
@@ -172,19 +131,16 @@ body {
     left: 609px;
 }
 
-
-
 .lvl2_MC {
     position: absolute;
     display: none;
-    top: 427px;
-    left: 572px;
+    top: 410px;
+    left: 565px;
 }
-
-
 
 .lvl2_MC img {
     width: 130px;
+    margin-left: 5px;
 }
 
 .deathscreen {
@@ -197,13 +153,9 @@ body {
     height: 450px;
 }
 
-
-
 .deathscreen img {
     width: 700px;
 }
-
-
 
 .tryagain {
     position: absolute;
@@ -255,12 +207,13 @@ body {
 #mc2 {
     position: absolute;
     display: none;
-    top: 427px;
-    left: 572px;
+    top: 410px;
+    left: 565px;
 }
 
 #mc2 img {
     width: 130px;
+    margin-left: 5px;
 }
 
 .reward {
@@ -300,7 +253,6 @@ body {
     margin-right: 20px;
 }
 
-
 .winner {
     position: relative;
     display: none;
@@ -311,13 +263,10 @@ body {
     height: 500px;
 }
 
-
-
 .winner img {
     width: 500px;
     height: 300px;
 }
-
 
 .goagain {
     position: absolute;
@@ -332,4 +281,20 @@ body {
     color: white;
     padding: 10px;
     cursor: pointer;
+}
+
+.chance {
+    font-family: gametext;
+    color: white;
+}
+
+.door3rng {
+    display: none;
+}
+
+.door3rng p{
+    position: relative;
+    left: 40vw;
+    font-family: gametext;
+    color: white;
 }

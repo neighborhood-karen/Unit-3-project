@@ -23,6 +23,7 @@ let chest = document.querySelector("#reward");
 let winner = document.querySelector(".winner")
 let goagain = document.querySelector(".goagain");
 let goagainbtn = document.querySelector("#goagain");
+let door3rng = document.querySelector(".door3rng");
 
 
 
@@ -38,7 +39,7 @@ door1.addEventListener('click', function(){
     dungeonlvl1.style.display="none";
     dungeonlvl2_1.style.display="flex";
     lvl1_MC.style.display="none";
-    lvl2_MC.style.display="flex";
+    lvl2_MC.style.display="grid";
 });
 
 door1.addEventListener('mouseover', function(){
@@ -55,7 +56,7 @@ door2.addEventListener('click', function(){
     dungeonlvl1.style.display="none";
     dungeonlvl2_2.style.display="flex";
     lvl1_MC.style.display="none";
-    mc2.style.display="flex";
+    mc2.style.display="grid";
 });
 
 door2.addEventListener('mouseover', function(){
@@ -70,7 +71,13 @@ door2.addEventListener('mouseout', function(){
 
 door3.addEventListener('click', function(){
     dungeonlvl1.style.display="none";
-    deathscreen.style.display="flex";
+    if (Math.floor(Math.random() * 11) < 9) {
+        deathscreen.style.display="flex";
+        door3rng.style.display="flex";
+    } else {
+        reward.style.display="flex";
+        reward_mc.style.display="flex";
+    }
 });
 
 door3.addEventListener('mouseover', function(){
@@ -85,7 +92,12 @@ door3.addEventListener('mouseout', function(){
 
 attackbtn.addEventListener('click', function() {
     dungeonlvl2_1.style.display="none";
-    deathscreen.style.display="flex";
+    if (Math.floor(Math.random() * 101) < 75) {
+        deathscreen.style.display="flex";
+    } else {
+        reward.style.display="flex";
+        reward_mc.style.display="flex";
+    }
 });
 
 attackbtn.addEventListener('mouseover', function() {
@@ -100,8 +112,12 @@ attackbtn.addEventListener('mouseout', function() {
 
 attackbtn2.addEventListener('click', function() {
     dungeonlvl2_2.style.display="none";
-    reward.style.display="flex";
-    reward_mc.style.display="flex";
+    if (Math.floor(Math.random() * 101) > 75) {
+        deathscreen.style.display="flex";
+    } else {
+        reward.style.display="flex";
+        reward_mc.style.display="flex";
+    }
 });
 
 attackbtn2.addEventListener('mouseover', function() {
@@ -118,6 +134,7 @@ attackbtn2.addEventListener('mouseout', function() {
 tryagain.addEventListener('click', function() {
     homepage.style.display="flex";
     deathscreen.style.display="none";
+    door3rng.style.display="none";
 });
 
 tryagain.addEventListener('mouseover', function() {
